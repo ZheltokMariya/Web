@@ -1,0 +1,219 @@
+body{
+	background-image: url(pictures/depositphotos_35338053-stock-illustration-tea-background-with-cakes.jpg);
+	margin: 0px;
+}
+
+@font-face{
+	font-family: Katherine-Plus;
+	src: url(9540.ttf);
+}
+
+h1{
+	font-family: Katherine-Plus;
+	font-size: 80px;
+	color:   rgb(9, 57, 153);
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.mobilemenu{
+	display: none;
+}
+
+ul {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+.menu > li {
+    float: left;
+    position: relative;
+    width: 33.3%;
+
+}
+.menu > li > a {
+    display: block;
+    padding: 10px;
+    margin: 0px;
+    color: #E2F6F7;
+    font-family: Segoe Script, Comic Sans MS, Times New Roman, sans;
+    background-color:#01708E;
+}
+.menu > li > a:hover {
+    background-color: #01708E ;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+.dropdown > li {
+    display: block;
+}
+.dropdown > li > a {
+    display: block;
+    padding: 10px;
+    color: #E2F6F7;
+    font-family: Segoe Script, Comic Sans MS, Times New Roman, sans;
+    background-color: #01708E ;
+}
+.menu > a:hover {
+    background-color: #01708E;
+}
+.menu > li:hover > ul.dropdown {
+    display: block;
+    z-index: 100;
+    width: 40%;
+}
+a{
+	text-decoration: none;
+}
+
+.all{
+	position: relative;
+}
+
+.notice{
+	position: fixed;
+	float: left;
+	font-family: Segoe Script, Comic Sans MS, Times New Roman, sans;
+	color:  #631B29;
+	border: 5px solid #631B29;
+	width: 11%;
+	padding: 10px;
+	float: right;
+	margin-left: 10px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.notice a{
+	color:  #631B29;	
+}
+
+.content{
+	font-family: Comic Sans MS, Segoe Script,  Times New Roman, sans;
+	color: rgb(9, 57, 153);
+	margin-left: 16%;
+	padding: 15px;
+	width: auto;
+	float: left;
+	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 20;
+
+}
+
+.pic_idea{
+	float: left;
+	width: auto;
+	padding-right: 10px;
+}
+
+.pic_drink{
+	float: right;
+	padding-left: 10px;
+}
+
+.pic{
+	text-align: center;
+	width: auto;
+}
+
+.button{
+	z-index: 15;
+	top: 40%;
+	left: 40%;
+	width: 11%;
+	height: 10%;
+	position: absolute;
+	background-color: #E2F6F7;
+	border-color:  rgba(1, 1, 1, 0.5); 
+}
+
+.dark{
+	width: 90%;
+	height: 99%;
+	background-color: rgba(1, 1, 1, 0.5);
+	z-index: 10;
+	position: absolute;
+	top: 0px;
+}
+
+.image{
+
+	position: relative;
+	z-index: 5;
+}
+
+.image img{
+	width: 90%;
+	height: 30%;
+}
+
+@media screen and (max-width: 768px){
+	h1{
+		font-size: 2.3rem;
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+
+	.mobilemenu{
+		display: block;
+
+	}
+
+	.mobilemenu img{
+		width: 50px;
+		height: 50px;
+		float: left;
+		margin: 10px;
+	}
+
+	.menu, .notice{
+		display: none;
+	}
+
+	.content{
+		width: auto;
+		margin-left: 0px;
+		font-size: 18px;
+	}
+
+	.pic img{
+		width: 100%;
+	}
+
+	.image img{
+		width: 100%;
+		height: 33%;
+	}
+
+	.dark{
+		width: 100%;
+		height: 97%;
+	}
+
+	.button{
+		width: 20%;
+		height: 25%;
+
+	}
+
+	.pic_idea, .pic_drink{
+		float: none;
+		text-align: center;
+		padding: 0px;
+	}
+
+	.pic_idea img, .pic_drink img{
+		width: auto;
+	}
+
+
+}

@@ -1,0 +1,186 @@
+body{
+	background-image: url(pictures/depositphotos_35338053-stock-illustration-tea-background-with-cakes.jpg);
+	margin: 0px;
+}
+
+@font-face{
+	font-family: Katherine-Plus;
+	src: url(9540.ttf);
+}
+
+h1{
+	font-family: Katherine-Plus;
+	font-size: 80px;
+	color:   rgb(9, 57, 153);
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.mobilemenu{
+	display: none;
+}
+
+ul {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+.menu > li {
+    float: left;
+    position: relative;
+    width: 33.3%;
+
+}
+.menu > li > a {
+    display: block;
+    padding: 10px;
+    margin: 0px;
+    color: #E2F6F7;
+    font-family: Segoe Script, Comic Sans MS, Times New Roman, sans;
+    background-color:#01708E;
+}
+.menu > li > a:hover {
+    background-color: #01708E ;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+.dropdown > li {
+    display: block;
+}
+.dropdown > li > a {
+    display: block;
+    padding: 10px;
+    color: #E2F6F7;
+    font-family: Segoe Script, Comic Sans MS, Times New Roman, sans;
+    background-color: #01708E ;
+}
+.menu > a:hover {
+    background-color: #01708E;
+}
+.menu > li:hover > ul.dropdown {
+    display: block;
+    z-index: 100;
+    width: 40%;
+}
+a{
+	text-decoration: none;
+}
+
+.animation{
+    width: auto;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    z-index: 10;
+}
+
+.animation img{
+    width:12rem;
+    animation: coffe 13s linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.content{
+
+    font-family: Comic Sans MS, Segoe Script,  Times New Roman, sans;
+    color: rgb(9, 57, 153);
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 5;
+}
+
+.sorts{
+    display: table;
+    text-align: center;
+    border-collapse: collapse; 
+    border: 3px solid #01708E; 
+    width: 100%;
+}
+
+
+.arabica, .robysta{
+  display: table-cell;
+  text-align: center;
+  border: 3px solid #01708E;
+  padding: 15px;
+}
+
+@keyframes coffe{
+    0%{
+         transform: translate(0rem);       
+    }
+
+    50%{
+        transform: translate(83rem);
+    }
+
+    100%{
+
+        transform: translate(0rem);
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    h1{
+        font-size: 3.3rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 15px;
+    }
+
+    .mobilemenu{
+        display: block;
+
+    }
+
+    .mobilemenu img{
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin: 10px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .animation{
+        display: none;
+    }    
+
+    .sorts{
+        display: block;
+        border: none;
+     }
+
+    .arabica, .robysta{
+        display: block;
+        border: none;
+        padding: 10px;
+    }
+
+    .arabica, .robysta img{
+        width: auto;
+        padding: 0px;
+      }
+
+    .content{
+        padding: 0px;
+    }
+}
+
+

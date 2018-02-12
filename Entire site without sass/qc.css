@@ -1,0 +1,202 @@
+body{
+	background-color: rgb(230, 226, 215);
+	background-image: url(pictures/glasses_tea_coffee_multi-colored_20657_1920x1080.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+@font-face{
+	font-family: Katherine-Plus;
+	src: url(9540.ttf);
+}
+
+h1{
+	
+	font-size: 60px;
+	font-family: Katherine-Plus;
+	color: #B01E33;
+	text-align: center;
+	margin: auto;
+}
+
+
+.registration{
+	width: 33%;
+	text-align: left;
+	margin-left: 5%;
+	border: 5px solid #631B29;
+	padding: 10px;
+	background-color: rgba(230, 226, 215, 0.8);
+	position: relative;
+
+}
+.password{
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Century Gothic, Comic Sans MS, Times New Roman, sans;
+	color: #631B29;
+}
+
+.pass{
+	font-size: 18px;
+	font-family: Century Gothic, Comic Sans MS, Times New Roman, sans;
+	color: #631B29;
+}
+
+
+.all{
+	width: 50%;
+	border: 5px solid #01708E;
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 30%;
+	border-radius: 32px;
+	background-color: rgba(230, 226, 215, 0.8);
+
+}
+h2{
+	font-weight: bold;
+	font-size: 25px;
+	font-family: Segoe Script, Century Gothic, Comic Sans MS, Times New Roman, sans;
+	color: #01708E;
+	text-align: center;
+}
+select{
+	font-size: 18px;
+	font-family:  Segoe Script, Comic Sans MS, Times New Roman, sans;
+	color: #01708E;
+	margin-left: 10%
+}
+.sugar{
+	width: 20%;
+	text-align: left;
+	border: 2px solid #01708E;
+	padding: 10px;
+	margin-left: 35%;
+    background-color: #C3F0EE;
+
+}
+#sugar{
+	font-size: 18px;
+	font-family:  Segoe Script, Comic Sans MS, Times New Roman, sans;
+	color: #01708E;
+	margin-right: 10px;
+}
+#wsugar{
+	font-size: 18px;
+	font-family:  Segoe Script, Comic Sans MS, Times New Roman, sans;
+	color: #01708E;
+
+
+
+}
+.add{
+	width: 19%;
+	border: 2px solid #01708E;
+	padding: 10px;
+	margin-top: 15px;
+	margin-left: 10%;
+    background-color: #D1F6F7;
+
+}
+.sweet{
+	font-size: 18px;
+	font-family:  Segoe Script, Comic Sans MS, Times New Roman, sans;
+	color: #01708E;
+	text-align: center;
+}
+
+.other{
+	width: 60%;
+	border: 2px solid #01708E;
+	padding: 10px;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+    background-color: #E2F6F7;
+}
+.cup{
+	font-size: 18px;
+	font-family: Segoe Script, Comic Sans MS, Times New Roman, sans;
+	color: #01708E;
+	text-align: center;
+}
+.p::-webkit-input-placeholder {
+	font-size: 16px;
+	font-family: Segoe Script, Comic Sans MS, Times New Roman, sans;
+	color: #01708E;
+	text-align: center;
+}
+.ok{
+	width: 20%;
+	border: 5px solid #698F47;
+	padding: 10px;
+	margin-top: 15px;
+	margin-left: 20%;
+	border-radius: 50px 20px;
+	background-color: rgba(230, 226, 215, 0.8);
+ 
+}
+.button{
+	font-style: italic;
+	font-size: 18px;
+	font-family: Comic Sans MS, Times New Roman, sans;
+	color: #698F47;
+	text-align: left;
+	background-color: #D8DC6D;	
+}
+.complaints{
+	width: 90%;
+	font-style: italic;
+	font-size: 18px;
+	font-family: Comic Sans MS, Times New Roman, sans;
+	color: white;
+	text-align: left;
+	background-color: #698F47;
+}
+
+@media screen and (max-width: 768px){
+
+	h1{
+		font-size: 2.5rem;
+		width: 100%;
+		text-align: center;
+	}
+	.registration{
+		width: auto;
+		margin-left: auto;
+
+	}
+	.password, .pass{
+		font-size: 16px;
+
+	}
+	.all{
+		width: auto;
+		margin-left: auto;
+	}
+	h2{
+		font-size: 1.5rem;
+	}
+	select{
+		font-size: 18px;
+	}
+	.sugar{
+		margin: auto;
+		width: 50%;
+		text-align: left;
+	}
+	#sugar{
+		font-size: 18px;
+	}
+	#wsugar{
+		font-size: 18px;
+	}
+	.add, .other, .ok{
+		width: auto;
+		margin-left: auto;
+	}
+	.sweet, .cup, .p, .button, .complaints{
+		font-size: 18px;
+	}
+}

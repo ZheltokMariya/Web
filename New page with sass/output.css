@@ -1,0 +1,141 @@
+body {
+  background-image: url(pictures/depositphotos_35338053-stock-illustration-tea-background-with-cakes.jpg);
+  margin: 0px; }
+
+@font-face {
+  font-family: Katherine-Plus;
+  src: url(9540.ttf); }
+h1 {
+  font-family: Katherine-Plus;
+  font-size: 80px;
+  color: #093999;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.mobilemenu {
+  display: none; }
+
+ul {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+
+ul:after {
+  display: block;
+  content: ' ';
+  clear: both;
+  float: none; }
+
+.menu > li {
+  float: left;
+  position: relative;
+  width: 33.3%; }
+
+.menu > li > a {
+  display: block;
+  padding: 10px;
+  margin: 0px;
+  color: #E2F6F7;
+  font-family: Segoe Script, Comic Sans MS, Times New Roman, sans;
+  background-color: #01708E; }
+
+.menu > li > a:hover {
+  background-color: #01708E; }
+
+.dropdown {
+  display: none;
+  position: absolute;
+  width: 100%; }
+
+.dropdown > li {
+  display: block; }
+
+.dropdown > li > a {
+  display: block;
+  padding: 10px;
+  color: #E2F6F7;
+  font-family: Segoe Script, Comic Sans MS, Times New Roman, sans; }
+
+.menu > a:hover {
+  background-color: #01708E; }
+
+.menu > li:hover > ul.dropdown {
+  display: block;
+  z-index: 100;
+  width: 40%; }
+
+a {
+  text-decoration: none; }
+
+.content {
+  font-family: Comic Sans MS, Segoe Script, Times New Roman, sans;
+  font-size: 16px;
+  color: #093999;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  top: 10px; }
+
+.content img {
+  width: 15rem; }
+
+.cake, .pie {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around; }
+
+.napoleon, .tiramisu, .cheesecake, .ice-cream, .cherry, .strudel {
+  background-color: #c8f4f7;
+  margin: 10px;
+  border: 3px solid #01708E;
+  text-align: center; }
+
+h2 {
+  font-family: Segoe Script, Times New Roman, sans;
+  font-size: 30px;
+  color: #093999;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px; }
+
+.add {
+  text-align: center; }
+
+.toping {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  padding: 15px; }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3.3rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 15px; }
+
+  .mobilemenu {
+    display: block; }
+
+  .mobilemenu img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 10px; }
+
+  .menu {
+    display: none; }
+
+  h2 {
+    font-size: 1.5rem; }
+
+  .content {
+    width: auto;
+    margin-left: 0px;
+    font-size: 18px; } }
+
+/*# sourceMappingURL=output.css.map */

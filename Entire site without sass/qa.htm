@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="qc.css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Регистрация</title>
+</head>
+<body>
+
+<form method="POST">
+
+<h1>Чтобы продолжить необходимо пройти регистрацию: </h1>
+
+<div class="registration">
+	<p><input class="pass" type="text" value="Моё имя"/></p>
+
+	<p class="password">
+	<label> Пароль </label>
+	<input type="password"/>
+	</p>
+
+	<p  class="password"><label> Загрузите фото профиля: </label></p>
+
+	<p><input class="pass" type="file" >
+	<input class="pass" type="submit" value="Отправить">
+	</p>
+
+</div>
+
+<div class="all">
+
+<h2><label> Кое-что о ваших предпочтениях:   </label>
+<textarea>  </textarea></h2>
+
+<p><select>
+<option> Чай </option>
+<option> Кофе </option>
+<option> Какао </option>
+</select>
+</p>
+
+<div class="sugar">
+<span id="sugar"><input type="radio" name="suite type"/>с сахором </span>
+<span id="wsugar"><input type="radio" name="suite type"/>без сахара  </span>
+</div>
+
+<div class="add">
+<p class="sweet"><input type="checkbox" name="suite type"/> молоко</p> 
+<p class="sweet"><input type="checkbox" name="suite type"/> корица</p>  
+<p class="sweet"><input type="checkbox" name="suite type"/> карамель</p>  
+<p class="sweet"><input type="checkbox" name="suite type"/> джем</p> 
+<p class="sweet"><input type="checkbox" name="suite type"/> печенье</p> 
+</div>
+
+<div class="other">
+<p class="cup"><label>крепость напитка</label><input type="range" min="1" max="10"/> </p>
+<p class="cup"><label>количество чашек </label><input type="number"/></p>
+
+<p class="cup"><input class="p" type="email"  placeholder="ваш email"/></p>
+
+<p class="cup"><input  class="p"  type="tel" placeholder="ваш телефон">
+
+<p class="cup"><label>цвет чашки </label><input class="cup" type="color"/></p>
+<p class="cup"><label>дата доставки </label><input class="cup" type="date"/></p>
+</div>
+
+</div>
+
+<div class="ok">
+<p> <input class="button" type="button" value="Подтвердить"/></p>
+<p> <input class="button" type="submit" value="Отправить заказ" disabled/></p>
+<p> <button class="button" type="submit">Ok</button></p>
+<p><input class="complaints" type="text" value="Жалобы" readonly/></p>
+</div>
+
+</form>
+</body>
+</html>
