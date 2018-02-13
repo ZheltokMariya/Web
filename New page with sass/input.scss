@@ -29,7 +29,14 @@ h1{
 .mobilemenu{
 	display: none;
 }
-
+.dropdown > li {
+	@each $col in color1, color2, color3, color4 {
+		$i: $i + 1;
+		&.#{$col} {
+			background-color: nth($colors, $i);
+		}
+	}
+}
 
 
 ul {
