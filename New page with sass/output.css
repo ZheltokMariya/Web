@@ -16,6 +16,15 @@ h1 {
 .mobilemenu {
   display: none; }
 
+.dropdown > li.color1 {
+  background-color: #01788e; }
+.dropdown > li.color2 {
+  background-color: #01808e; }
+.dropdown > li.color3 {
+  background-color: #01888e; }
+.dropdown > li.color4 {
+  background-color: #01908e; }
+
 ul {
   display: block;
   margin: 0px;
