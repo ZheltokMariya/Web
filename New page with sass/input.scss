@@ -1,11 +1,17 @@
-$colorfont: #093999;
-$colormenu: #E2F6F7;
-$colorother: #01708E;
+$color_font: #093999;
+$color_menu: #E2F6F7;
+$color_other: #01708E;
 $fontList1: Segoe Script, Comic Sans MS, Times New Roman, sans;
 $fontList2: Comic Sans MS, Segoe Script,  Times New Roman, sans;
 $fontList3: Segoe Script,  Times New Roman, sans;
 $colors: #01788e #01808e #01888e #01908e;
 $i: 0;
+@mixin Scroll{
+	display: block;
+    padding: 10px;
+    color: $color_menu;
+    font-family: $fontList1;
+}
 
 body{
 	background-image: url(pictures/depositphotos_35338053-stock-illustration-tea-background-with-cakes.jpg);
@@ -20,7 +26,7 @@ body{
 h1{
 	font-family: Katherine-Plus;
 	font-size: 80px;
-	color:  $colorfont;
+	color:  $color_font;
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 0px;
@@ -44,13 +50,15 @@ ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
+    &:after{
+    	display: block;
+   		content: ' ';
+    	clear: both;
+    	float: none;    
+    }
+
 }
-ul:after {
-    display: block;
-    content: ' ';
-    clear: both;
-    float: none;
-}
+
 
 .menu > li {
     float: left;
@@ -59,33 +67,31 @@ ul:after {
 
 }
 .menu > li > a {
-    display: block;
-    padding: 10px;
+	@include Scroll;
     margin: 0px;
-    color: $colormenu;
-    font-family: $fontList1;
-    background-color: $colorother;
+    background-color: $color_other;
+    &:hover {
+    	background-color: $color_other;   	
+    }
 }
-.menu > li > a:hover {
-    background-color: $colorother;
-}
+
 .dropdown {
     display: none;
     position: absolute;
     width: 100%;
+
+	li {
+		display: block;
+
+		a {
+ 			@include Scroll;
+ 		}
+	}
 }
-.dropdown > li {
-    display: block;
-}
-.dropdown > li > a {
-    display: block;
-    padding: 10px;
-    color: $colormenu;
-    font-family: $fontList1;
- 
-}
+
+
 .menu > a:hover {
-    background-color: $colorother;
+    background-color: $color_other;
 }
 .menu > li:hover > ul.dropdown {
     display: block;
@@ -100,7 +106,7 @@ a{
 
 	font-family: $fontList2;
 	font-size: 16px;
-	color: $colorfont;
+	color: $color_font;
 	padding: 30px;
 	background-color: rgba(255, 255, 255, 0.8);
 	position: relative;
@@ -123,15 +129,15 @@ a{
 {
 	background-color: rgba(200, 244, 247, 1);
 	margin: 10px;
-	border: 3px solid  $colorother;
+	border: 3px solid  $color_other;
 	text-align: center;
 }
 
 h2{
 	font-family:$fontList3;
 	font-size: 30px;
-	color:  $colorfont;
-	text-align: center;
+	color:  $color_font;
+	@extend .add;
 	margin-top: 30px;
 	margin-bottom: 0px;	
 }
@@ -143,7 +149,7 @@ h2{
 .toping{
 	display: inline-block;
 	width: auto;
-	text-align: center;
+	@extend .add;
 	padding: 15px;
 }
 
